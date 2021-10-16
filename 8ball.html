@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8Ball</title>
+	<style>
+		body{
+			background: #333;
+			color: red;
+		}
+		#output{
+			font-weight: bold;
+			font-size: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="output"></div>
+	<script>
+
+		var answer = "Something went wrong...";
+		var output = document.getElementById("output");
+		var question = prompt("Ask me anything...");
+		var randomNumber = Math.floor(Math.random()*6);
+		switch(randomNumber){
+			case 0:
+				answer = "It will work out...";
+				break;
+			case 1:
+				answer = "Hell No!";
+				break;
+			case 2:
+				answer = "What would Donald Trump do?";
+				break;
+			case 3:
+				answer = "Use your brain and think!";
+				break;			
+			case 4:
+				answer = "If you believe in the evil of the White Man.";
+				break;
+			default:
+				answer = "That's what your cousin Andy said will happen.";
+				break;	
+					
+		}
+
+		output.innerHTML = "You asked me "+question+"<br> I think that "+answer;
+		
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

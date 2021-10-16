@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ElseIf</title>
+</head>
+<body>
+
+	<div style="font-size: 48px; font-weight: bold; color: red" id="output"></div>
+
+	<script>
+
+		var myTime = prompt("What hour is it?");
+
+		var output = document.getElementById("output");
+
+		if(myTime >=8 && myTime < 12){
+			output.innerHTML = "Wakey Wakey! It's morning!";
+		} else if (myTime >=12 && myTime < 13){
+			output.innerHTML = "Go to Lunch! Enjoy your Meal.";
+		} else if (myTime >=13 && myTime <= 16){
+			output.innerHTML = "Get yo ass to work!";
+		} else if (myTime >16 && myTime < 20){
+			output.innerHTML = "Spend Time with Family and eat some Dinner.";
+		} else if (myTime >=22){
+			output.innerHTML = "Get some rest... Zzzz";
+		} else {
+			output.innerHTML = "You shoud be sleeping";
+		}
+	
+
+
+
+
+
+
+	</script>
+
+
+
+
+	
+</body>
+</html>

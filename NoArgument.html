@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>No Argument</title>
+</head>
+<body>
+
+	<br><div id="output"></div>
+
+	<script>
+		
+	var a = myFunNew();
+
+	function myFunNew(para = "Hello World"){
+		output.innerHTML +=para;
+		return para;
+	}
+
+	function myFunOld(para){
+		if(typeof para ==="undefined"){
+			para = "Hello World";
+		}
+		output.innerHTML += para;
+		return para;
+	}
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

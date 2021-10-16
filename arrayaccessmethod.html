@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arrayaccessmethod</title>
+</head>
+<body>
+	<script>
+		
+	var newHolder = ["cat", "dog","rabbit","bird"];
+
+	//arrayname.indexOf("") will give you index number
+
+	//var posIndex = newHolder.indexOf("cat");
+
+	var q =prompt("What did you want to look for?");
+	var p =newHolder.indexOf(q);
+
+	var message = p >-1 ? "Found" : "Not There";
+	alert(message);
+
+	//newHolder.includes("dog") This creates a boolean it's either true or false
+
+	//newHolder.slice(1,3) will output "dog","rabbit" it starts with the index of choice (parameter 1) and ends with the before last index so in the example Bird is index 3, but it ouputs rabbit. B4 last.
+	
+
+
+
+	</script>
+	
+	
+</body>
+</html>

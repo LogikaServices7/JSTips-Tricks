@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Do Loops</title>
+</head>
+<body>
+
+	<div id="output"></div>
+
+	<script>
+		
+	//x++ Increment AFTER output.innerHTML	
+	// var output = document.getElementById("output");
+
+	// var x = 0;
+
+	// do{
+	// 	output.innerHTML +="value x = "+x+"<br>";
+	// 	x++;
+	// }
+	// while(x < 10);
+	// output.innerHTML +="Final value x = "+x+"<br>";
+
+
+
+
+
+
+
+
+
+	//Increment BEFORE output.innerHTML
+	// var output = document.getElementById("output");
+
+	// var x = 0;
+
+	// do{
+	// 	x++
+	// 	output.innerHTML +="value x = "+x+"<br>";
+		
+	// }
+	// while(x < 10);
+	// output.innerHTML +="Final value x = "+x+"<br>";
+
+
+
+
+
+
+
+	//Getting a prompt to request how many times to loop
+	// var output = document.getElementById("output");
+	// var answer = prompt("How many times do you want me to loop?");
+	// answer = Number(answer); //makes sure the answer MUST be a number
+
+	// var x = 0;
+
+	// do{
+	// 	x++
+	// 	output.innerHTML +="value x = "+x+"<br>";
+		
+	// }
+	// while(x < answer);
+	// output.innerHTML +="Final value x = "+x+"<br>";
+
+
+
+
+
+
+
+
+	//Looping all EVEN NUMBERS
+	var output = document.getElementById("output");
+
+	var x = 0;
+
+	do{
+		if(x % 2 ===0){
+		output.innerHTML +="value x = "+x+"<br>";
+		}
+		x++;
+	}
+	while(x < 30);
+	output.innerHTML +="Final value x = "+x+"<br>";
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

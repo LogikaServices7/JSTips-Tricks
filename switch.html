@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Switch</title>
+</head>
+<body>
+
+	<div style="font-size: 48px; font-weight: bold; color: red" id="output"></div>
+
+	<script>
+
+	var myTime = prompt("What are you doing?");
+	var output = document.getElementById("output");
+	var html;
+
+		// switch (myTime){
+		// 	case "Get Up!":
+		// 		html = "8:00am";
+		// 		break;
+		// 	case "Lunch":
+		// 		html = "2:00pm";
+		// 		break;	
+		// 	case "Dinner":
+		// 		html = "7:00pm";
+		// 		break;	
+		// 	default:
+		// 		html = "You should be coding."
+		// }
+
+		switch (Number(myTime)){
+			case 8:
+				html = "Breakfast";
+				break;
+			case 2:
+				html = "Lunch";
+				break;	
+			case 7:
+				html = "Dinner";
+				break;	
+			default:
+				html = "You should be coding."
+		}
+		
+		output.innerHTML = html;
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

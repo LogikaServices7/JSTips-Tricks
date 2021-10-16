@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DomExample</title>
+</head>
+<body>
+
+	<div id="output">The Revolution is nigh!</div>
+	<input type="text" id="val">
+
+	<script>
+
+		//1st way
+		// var output = document.getElementById("output");
+		// output.innerHTML = "Welcome to my page";
+		// console.dir(document);
+
+		//2nd  and easier way
+		// document.getElementById("output").innerHTML = "Welcome to my page";
+
+		var output = document.getElementById('output');
+		var val = document.getElementById('val');
+		val.value = output.innerHTML;
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

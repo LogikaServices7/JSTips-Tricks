@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Guess</title>
+</head>
+<body>
+	<script>
+		
+	//Math.random(); Calls Random number only decimals
+	//Math.random()*10 Will make an actual whole number w/ decimals
+	//Math.floor(Math.random() * 10) will give a complete number 0-9 without decimals
+	//Math.floor(Math.random() * 10 + 1) will give a random number from 1-10
+
+	// var animals=["Cat", "Dog", "Rabbit", "Bird","Fish"];
+
+	// var randomIndex = Math.floor(Math.random()*animals.length);
+	//console.log(randomIndex);
+	//The above code will output a NUMBER 0-4
+
+	//console.log(animals[randomIndex]);
+	//This will out put a random animal string
+
+	// var randomAnimal = animals[randomIndex];
+	// var message = prompt("Which index value is: "+ randomAnimal);
+	// var response = (message == randomIndex)? "Correct" : "Wrong it was "+ randomIndex;
+	// alert(response);
+
+
+	var holidays= ["Christmas","Thanksgiving","Halloween","Birthday","New Years"];
+	var randomHolidayIndex = Math.floor(Math.random()*holidays.length); //# only
+
+	var randomHoliday =holidays[randomHolidayIndex];
+
+	var message = prompt("What Holiday is index number: "+ randomHolidayIndex);
+	var response = (message == randomHoliday)? "Correct!" : "Incorrect. The answer was: "+randomHoliday;
+	alert(response);
+
+
+
+
+	</script>
+</body>
+</html>

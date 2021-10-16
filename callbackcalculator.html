@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Call Back calculator</title>
+</head>
+<body>
+
+	First: <input type="text" id="num1">
+	Second <input type="text" id="num2">
+	<br>
+	<input type="button" onclick="addBy()" value="Add">
+	<input type="button" onclick="subBy()" value="Subtract">
+	<input type="button" onclick="mulBy()" value="Multiply">
+	<input type="button" onclick="divBy()" value="Divide">
+	<input type="button" onclick="modBy()" value="Modulus">
+	<br>
+	<div id="output"></div>
+
+	<script>
+		
+		var output = document.getElementById("output");
+		var num1 = document.getElementById("num1");
+		var num2 = document.getElementById("num2");
+
+		function addBy(){
+			outC(num1.value,num2.value,"+",function(a,b){
+				return a + b;
+			})
+		}
+
+		// function outC(a,b,s,cback){
+		// 	var result = cback(Number(a),Number(b));
+		// 	output.innerHTML += a+" "+s+" "+b+" = "+ result+ "<br>";
+		// }
+
+
+
+		function subBy(){
+			outC(num1.value,num2.value,"-",function(a,b){
+				return a - b;
+			})
+		}
+
+		// function outC(a,b,s,cback){
+		// 	var result = cback(Number(a),Number(b));
+		// 	output.innerHTML += a+" "+s+" "+b+" = "+ result+ "<br>";
+		// }
+
+		
+
+		function mulBy(){
+			outC(num1.value,num2.value,"x",function(a,b){
+				return a * b;
+			})
+		}
+
+		/// function outC(a,b,s,cback){
+		// 	var result = cback(Number(a),Number(b));
+		// 	output.innerHTML += a+" "+s+" "+b+" = "+ result+ "<br>";
+		// }
+
+		function divBy(){
+			outC(num1.value,num2.value,"/",function(a,b){
+				return a / b;
+			})
+		}
+
+		// function outC(a,b,s,cback){
+		// 	var result = cback(Number(a),Number(b));
+		// 	output.innerHTML += a+" "+s+" "+b+" = "+ result+ "<br>";
+		// }
+
+		function modBy(){
+			outC(num1.value,num2.value,"%",function(a,b){
+				return a % b;
+			})
+		}
+
+		
+		//We used this function for All Above, but since it's a CALLBACK we only need to use it ONCE
+		function outC(a,b,s,cback){
+			var result = cback(Number(a),Number(b));
+			output.innerHTML += a+" "+s+" "+b+" = "+ result+ "<br>";
+		}
+
+
+
+
+
+	</script>	
+	
+</body>
+</html>

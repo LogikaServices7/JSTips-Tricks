@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>If...</title>
+</head>
+<body>
+	<div style="font-size: 48px; font-weight: bold; color: red" id="output"></div>
+	<script>
+		
+	userNames = ["Randy", "Al","Moon","Dalia","red"];
+	languages = ["PHP","Javascript","Python","Wordpress"]
+	var name =prompt("What is your name?"); 
+	var output = document.getElementById("output");
+	//var htmlOutput = "";
+	if(userNames.indexOf(name) > -1){
+		alert("hello");
+		htmlOutput="Welcome it was true! ";
+		var age =prompt("How old are you?")
+		htmlOutput += age > 18 ?"You are over 18!" : "You are under 18";
+		var it =prompt("What coding language or IT are you in?")
+		htmlOutput += languages.indexOf(it) > -1 ? "And you can write "+ it : "Sorry dude";
+
+	} else {
+
+		output.innerHTML = "You're not Welcome here...";
+
+	}
+
+	output.innerHTML = htmlOutput+"! " + " "+name+"...";
+
+
+
+	</script>
+</body>
+</html>

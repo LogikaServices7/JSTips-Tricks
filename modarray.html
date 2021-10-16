@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array</title>
+</head>
+<body>
+	<script>	
+
+	// var animals = ["cat","dog","rabbit","bird","fish","zebra"];
+	// animals.push("sheep");//add item at end of array
+	// var remove1 = animals.pop();// remove last item from the end of an array
+
+	// animals.shift();//remove 1st item
+	// animals.unshift("horse");//add first item to array
+
+	// animals.splice(2,1);//remove from pos number of items parameter 1 is index number, parameter 2 is how many items to splice
+
+	var animals = ["cat","dog","rabbit","bird","fish","zebra"];
+	var startVal = animals.length;
+	console.log(startVal);
+	animals[20]="Horse";
+	animals.fill("mouse",startVal, (animals.length-1));
+    
+	//animals.sort();//sort items by value
+	//animals.reverse();//reverse the order of items
+	//The order in which the commands are displayed affects the output
+	// example: The above output is ["zebra", "rabbit", "fish", "dog", "cat", "bird"] Sort 1st, Reverse 2nd
+
+
+	//chaining
+	//animals.sort().reverse();//Same output as above
+
+	//console.log(remove1);
+	console.log(animals);
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

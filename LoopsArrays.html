@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loops and Arrays</title>
+</head>
+<body>
+
+	<div id="output"></div>
+
+	<script>
+
+	//4 ways to Loop Arrays
+
+
+		var output = document.getElementById("output");
+		var Griselda = ["Conway","Benny Butcher","Westside Gunn"];
+
+		//1
+		for(var x=0; x < Griselda.length; x++){
+			output.innerHTML+= Griselda[x]+"<br>";
+		}
+
+		//2
+		for(var x = Griselda.length -1; x >=0; x--){
+			output.innerHTML+= Griselda[x]+"<br>";
+		}
+		
+		//3
+		output.innerHTML+= "For In: <br>";
+		for(value of Griselda){
+			output.innerHTML+= value +"<br>";
+		}
+
+		//4
+		var x = 0;
+		while(Griselda[x]){
+			output.innerHTML+= Griselda[x]+"<br>";
+			x++;
+		}
+		
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

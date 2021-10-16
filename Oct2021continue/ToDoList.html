@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		
+		var task = ["Code Php", "Code JS", "Wordpress", "Push projects to github","Respond to emails","Adobe cloud/Photshop"];
+		var progress = ["Finished", "In progress", "Not started"];
+
+		var question1 = prompt("Which task would you like to complete out of tasks 1-6? 1)Code Php 2)Code Javascript 3)Wordpress 4)Push projects to Github 5)Respond to emails 6)Photoshop/Illustrator");
+		var question2 = prompt("Status of completion? 1 = Finished | 2 = In Progress | 3 = Not Started");
+
+		console.log("Today you will: " + task[(question1-1)] + "... Status of task = "+ progress[(question2-1)]);
+
+
+	</script>
+	
+</body>
+</html>

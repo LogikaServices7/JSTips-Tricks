@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coin Toss</title>
+</head>
+<body>
+
+	<div id="output"></div>
+
+	<script>
+		
+	var html = "Something went wrong";
+	var output = document.getElementById("output");
+	var answer = prompt("Heads or Tails?");
+	var result = answer == "Heads" ? 1 : 0;
+	var randomNumber = Math.floor(Math.random()*2);
+	if(result == randomNumber){
+		html = "Well I'll be damn. You guessed it correctly!";
+	}else{
+		html ="You were wrong... Dead Wrong."
+	}
+
+	output.innerHTML = html;
+
+
+
+
+	</script>
+	
+</body>
+</html>

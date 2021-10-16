@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objects</title>
+</head>
+<body>
+	<script>
+	
+	//Basic Object	
+	// var Dalia = {name:"Dalia",age: 34, nationality: "Philippines", husband: "Al Solomon",specialty:"Wordpress"};
+
+	// console.log(Dalia);
+
+
+
+
+	//Retrieving Data from Object
+	// var Dalia = {name:"Dalia",age: 34, nationality: "Philippines", husband: "Al Solomon",specialty:"Wordpress"};
+	// var retrieveData ="age"; //this helps to retrieve data dynamically
+
+	// console.log(Dalia[retrieveData]);
+
+
+
+
+
+	//this helps to retrieve data dynamically
+	// var Dalia = {name:"Dalia",age: 34, nationality: "Philippines", husband: "Al Solomon",specialty:"Wordpress"};
+	// var retrieveData =prompt("What would you like to know about Dalia?"); 
+
+	// console.log(Dalia[retrieveData]);
+
+	//*In the console* delete object.property    will delete object property Ex. delete Dalia.age
+	// object.property = new value               will create new property Ex. Dalia.son ="Allen"
+
+
+
+
+
+	//Looping the Data
+	var Dalia = {name:"Dalia",age: 34, nationality: "Philippines", husband: "Al Solomon",specialty:"Wordpress"};
+
+
+	for(var property in Dalia){
+		
+		console.log(property + " " + Dalia[property])
+	};
+
+	//property is property     Objectname[property] will output value
+
+
+	</script>
+	
+</body>
+</html>

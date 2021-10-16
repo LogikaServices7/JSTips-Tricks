@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function Scope</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script>
+		
+	var outsideFun = "Just looking in... Man, It's cold out here.:(";
+
+	function myFun(){
+		var insideFun = "Would you like to come in and have some warm Tea?";
+	    //insideFun = "Would you like to come in and have some warm Tea?";
+
+
+		console.log(outsideFun);
+		console.log(insideFun);
+	}
+
+	myFun();
+	console.log(outsideFun);
+	console.log(insideFun); //This WILL NOT SHOW if a var INSIDE the function, but if regular like above it will show OUTSIDE the function
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

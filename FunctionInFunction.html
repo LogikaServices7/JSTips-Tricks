@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function in Function</title>
+</head>
+<body>
+	<div id="output"></div>
+	<script>
+		var output = document.getElementById("output");
+		var a = 1000;
+
+		function outsideFun(){
+			var b = 2000;
+			function insideFun(){
+				b++;
+				return b; //implement 1 b = 2001
+			}
+			insideFun(); //Calling the function here will work
+			var c = insideFun();  //implement 2 b = 2002
+			var d = function(){ //implement 3 b = 2003
+				b++;
+				return b;
+			}
+			d();
+			var e = d(); //implement 4 So variable b will equal 2004
+			console.log(b);
+		}
+
+		
+		outsideFun();
+		outsideFun();
+		outsideFun();
+		//insideFun(); //Will not work because it is local
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Call Back Functions</title>
+</head>
+<body>
+
+	First: <input type="text" id="num1">
+	Second <input type="text" id="num2">
+	<br>
+	<input type="button" onclick="addBy()" value="Add">
+	<input type="button" onclick="subBy()" value="Subtract">
+	<input type="button" onclick="mulBy()" value="Multiply">
+	<input type="button" onclick="divBy()" value="Divide">
+	<br>
+	<div id="output"></div>
+
+	<script>
+		
+		var output = document.getElementById("output");
+
+
+		function makeMessage(s1,s2,callback){
+			var result1 = callback(s1,s2);
+			output.innerHTML += result1;
+		}
+
+		makeMessage("hello", "world",function(s1,s2){
+			var result2 = s1 + s2 + " worked" + "<br>";
+			return result2;
+		})
+
+		makeMessage("Java","Script", function(s1,s2){
+			var result2 = s1 + s2 + " is great!" + s1;
+			return result2;
+		})
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

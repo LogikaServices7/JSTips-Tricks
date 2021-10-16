@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ternanry Operator</title>
+</head>
+<body>
+
+<div id="output">Ternary Operator</div>
+
+<script>
+
+	//JUST CHECKING IF LOGINIS TRUE OR FALSE 
+	
+	// var output = document.getElementById("output");
+	// var login = true;
+	// var outputHolder = 1;
+	//  var userOkay = login /*login==true*/ is optional but not needed ? outputHolder = 1 : outputHolder = "It's False like a mug!" ;
+	// output.innerHTML = userOkay;
+
+	// login ? alert("You may enter") : alert("Nope!");
+
+
+	//---------------------------------------------------------------------
+
+	//CHECKING IF NAME IN ARRAY IS PRESENT OR NOT
+	// userNames = ["Randy", "Al","Moon","Dalia","red"];
+	// var name =prompt("What is your name?");
+	// var checkUser = userNames.indexOf(name) > -1 ? true : false; 
+	// var output = document.getElementById("output");
+	// output.innerHTML = checkUser ? "Welcome!" : "You're not Welcome here...";
+	// output.innerHTML += " "+name+"...";
+
+	//-----------------------------------------------------------------------
+
+	//Simplified way of ABOVE SCENERIO
+	userNames = ["Randy", "Al","Moon","Dalia","red"];
+	var name =prompt("What is your name?"); 
+	var output = document.getElementById("output");
+	output.innerHTML =  userNames.indexOf(name) > -1 ? "Welcome!" : "You're not Welcome here...";
+	output.innerHTML += " "+name+"...";
+
+</script>
+
+	
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random Name</title>
+</head>
+<body>
+	<div id="output"></div>
+	<input type="button" onclick="myFun()" value="Click Me!">
+
+	<script>
+
+		// var adj = ["super", "cool", "The Amazing", "Naughty, Naughty", "Beautiful"];
+		// var output = document.getElementById("output");
+
+		// function myFun(){
+
+		// 	var question = prompt("What is your name?");
+		// 	var nameAdj = Math.floor(Math.random()*adj.length);
+		// 	output.innerHTML +=adj[nameAdj]+ " "+ question + "<br>";
+
+
+		// }
+
+
+		var mgs = ["Solid Snake", "Liquid Snake", "Big Boss", "The Boss", "Revolver Ocelot", "Otacon", "Myrle","Dr. Naomi", "Roy Campbell", "Raiden", "Solidus Snake"];
+		var output = document.getElementById("output");
+		
+
+		function myFun(){
+
+			var nameMgs = Math.floor(Math.random()*mgs.length);
+
+
+			
+			output.innerHTML +=mgs[nameMgs]+ "<br>";
+
+			
+
+
+		}
+		
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

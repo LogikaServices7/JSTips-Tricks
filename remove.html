@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>remove</title>
+</head>
+<body>
+
+	<script>
+
+		var arr = [3,4,5,77,33,22,4,1,55,2,"Cat","Dog"];
+		arr.sort();
+		console.log(arr);
+		var q = prompt("What would you like to remove?");
+		q = isNaN(q) ? q : parseInt(q);//This function removes numbers
+		var finder = arr.indexOf(q)
+
+		var v = (finder > - 1) ? arr.splice(finder,1): false;
+		console.log(v);
+
+		console.log(arr);
+		
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>
